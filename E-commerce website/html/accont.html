@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial -scale=1.0">
+    <title>RedStore|Ecommerce website</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/phone.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar h-resp-nav">
+            <div class="logo v-resp-nav">
+                <img src="../Images/logo.png" style="width: 120px; cursor: pointer;">
+            </div>
+            <nav>
+                <ul class="nav-list v-resp-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="accont.html">Account</a></li>
+                    <img src="../Images/cart.png" width="30px;" height="30px;">
+                </ul>
+                <div class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+         <a href="#" class="gotopbtn">
+     <i class="fa fa-arrow-up"></i>
+</a>
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="../Images/image1.png" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login">login</span>
+                            <span onclick="register">Register</span>
+                            <hr id="indicator">
+                        </div>
+                        <form id="loginform">
+                            <input type="text" placeholder="username">
+                            <input type="password" placeholder="password">
+                            <button class="btn" type="submit">login</button>
+                            <a href="#">forget password</a>
+                        </form>
+
+                        <form id="Registerform">
+                            <input type="text" placeholder="username">
+                            <input type="password" placeholder="password">
+                            <input type="email" placeholder="email">
+                            <button class="btn" type="submit">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="background">
+        <p class="text-footer">Copyright &copy;2027 www.RedStore.com All Rights Reserved</p>
+    </footer>
+    <script>
+        var loginform = document.getElementById("loginform");
+        var Registerform = document.getElementById("Registerform");
+        var indicator = document.getElementById("indicator");
+
+        function register() {
+            Registerform.style.transform = "translateX(0px)";
+            loginform.style.transform = "translateX(0px)";
+        }
+
+        function login() {
+            Registerform.style.transform = "translateX(300px)";
+            loginform.style.transform = "translateX(300px)";
+        }
+    </script>
+</body>
+
+</html>

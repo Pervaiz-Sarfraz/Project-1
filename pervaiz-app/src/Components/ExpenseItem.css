@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(12, 60, 73);
+    margin: 40px;
+    padding: 6px;
+    border-radius: 16px;
+    font-weight: 700;
+}
+.expen{
+    font-size: 24px;
+    color: gray;
+}
+.expen-description{
+    color: white;
+}
+.price{
+    color: white;
+    background-color: rgb(8, 76, 116);
+    border-radius: 16px;
+    font-size: 24px;
+    padding: 8px  40px;
+    border: 2px solid white;
+    text-align: center;
+
+  }

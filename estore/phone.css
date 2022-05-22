@@ -1,0 +1,16 @@
+@media screen and (max-width:1102px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+}
